@@ -5,15 +5,19 @@
 
 int main()
 {
-    Vector3D Test(12,3,4);
-    Vector3D Operand(26,1,89);
+    Vector3D VectorA(33, 55, -47);
+    Vector3D VectorB(-212, -16, 94);
     
-    Test.SplitToStruct();
+    VectorA.SplitToStruct();
 
-    Test = Test.CrossProduct(Operand);
+    Vector3D VectorC = VectorA.CrossProduct(VectorB);
 
-    std::cout << Test.x << std::endl;
-    std::cout << Test.y << std::endl;
-    std::cout << Test.z << std::endl;
+    double DProduct = VectorA.DotProduct(VectorC);
+
+    std::cout << VectorC.x << std::endl;
+    std::cout << VectorC.y << std::endl;
+    std::cout << VectorC.z << std::endl;
+
+    std::cout << DProduct << std::endl;
     return 0;
 }

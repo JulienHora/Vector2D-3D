@@ -22,4 +22,5 @@ class Vector3D
         Vector3DSplitted SplitToStruct();
         Vector3D ClampToSize(double Min, double Max);
         Vector3D CrossProduct(Vector3D Operand);
+        double DotProduct(Vector3D Operand);
 };
