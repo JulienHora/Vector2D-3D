@@ -42,3 +42,16 @@ Vector3D Vector3D::operator * (Vector3D B)
 { Vector3D Result(x*B.x, y*B.y, z*B.z); return Result; }
 Vector3D Vector3D::operator / (Vector3D B)
 { Vector3D Result(x/B.x, y/B.y, z/B.z); return Result; }
+Vector3D Vector3D::operator + (double B)
+{ Vector3D Result(x+B, y+B, z+B); return Result; }
+Vector3D Vector3D::operator - (double B)
+{ Vector3D Result(x-B, y-B, z-B); return Result; }
+Vector3D Vector3D::operator * (double B)
+{ Vector3D Result(x*B, y*B, z*B); return Result; }
+Vector3D Vector3D::operator / (double B)
+{ Vector3D Result(x/B, y/B, z/B); return Result; }
+
+bool Vector3D::operator == (Vector3D B)
+{ return x == B.x && true; }
+bool Vector3D::operator != (Vector3D B)
+{ return x != B.x && true; }

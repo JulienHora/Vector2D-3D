@@ -30,4 +30,11 @@ class Vector3D
         Vector3D operator - (Vector3D B);
         Vector3D operator * (Vector3D B);
         Vector3D operator / (Vector3D B);
+        Vector3D operator + (double B);
+        Vector3D operator - (double B);
+        Vector3D operator * (double B);
+        Vector3D operator / (double B);
+
+        bool operator == (Vector3D B);
+        bool operator != (Vector3D B);
 };
