@@ -25,4 +25,9 @@ class Vector3D
         Vector3D CrossProduct(Vector3D Operand);
         double DotProduct(Vector3D Operand);
         double Distance(Vector3D Operand);
+
+        Vector3D operator + (Vector3D B);
+        Vector3D operator - (Vector3D B);
+        Vector3D operator * (Vector3D B);
+        Vector3D operator / (Vector3D B);
 };

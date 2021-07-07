@@ -33,3 +33,12 @@ double Vector3D::Distance(Vector3D Operand)
     double Distance = std::sqrt(std::pow((Operand.x-x), 2) + std::pow((Operand.y-y), 2) + std::pow((Operand.z-z), 2));
     return Distance;
 }
+
+Vector3D Vector3D::operator + (Vector3D B)
+{ Vector3D Result(x+B.x, y+B.y, z+B.z); return Result; }
+Vector3D Vector3D::operator - (Vector3D B)
+{ Vector3D Result(x-B.x, y-B.y, z-B.z); return Result; }
+Vector3D Vector3D::operator * (Vector3D B)
+{ Vector3D Result(x*B.x, y*B.y, z*B.z); return Result; }
+Vector3D Vector3D::operator / (Vector3D B)
+{ Vector3D Result(x/B.x, y/B.y, z/B.z); return Result; }
