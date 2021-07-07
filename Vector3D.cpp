@@ -27,3 +27,9 @@ double Vector3D::DotProduct(Vector3D Operand)
     double DotProduct = (x*Operand.x)+(y*Operand.y)+(z*Operand.z);
     return DotProduct;
 }
+
+double Vector3D::Distance(Vector3D Operand)
+{
+    double Distance = std::sqrt(std::pow((Operand.x-x), 2) + std::pow((Operand.y-y), 2) + std::pow((Operand.z-z), 2));
+    return Distance;
+}

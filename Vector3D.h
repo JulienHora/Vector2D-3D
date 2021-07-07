@@ -1,4 +1,5 @@
 #include "utils/Math.h"
+#include <cmath>
 
 struct Vector3DSplitted
 {
@@ -23,4 +24,5 @@ class Vector3D
         Vector3D ClampToSize(double Min, double Max);
         Vector3D CrossProduct(Vector3D Operand);
         double DotProduct(Vector3D Operand);
+        double Distance(Vector3D Operand);
 };
